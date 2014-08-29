@@ -34,7 +34,7 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   line-height: 1;
 }
 
@@ -53,6 +53,12 @@ h2 {
   font-weight: normal;
   color: $grayLight;
 }
+h4 {
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+
 h9 {
   font-size: 2em;
   letter-spacing: -1px;
@@ -65,8 +71,17 @@ h9 {
 }
 
 
+h5 {
+  font-size: 1em;
+  color: black;
+  text-align: left;
+  letter-spacing: 1px;
+  font-weight: normal;
+
+
+}
 p {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.7em;
 }
 
@@ -77,22 +92,22 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.4em;
-  color: white;
+  color: #620000;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: #620000;
     text-decoration: none;
   }
 }
 #menue_items {
   float: left;
   margin-right: 10px;
-  font-size: 1em;
-  color: white;
+  font-size: 1.3em;
+  color: black;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -139,40 +154,25 @@ footer {
 }
 
 .hero-unit {
-border-radius: 50px;
+border-radius: 10px;
    padding:10px;
 
 
 
 }
-//for contact us form for nick name attribute
-.hidden { display: none; }
-/*flash*/
-
-.alert-error {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
+.navbar-custom {
+    background-color:#ccc;
+    color:#ffffff;
+    border-radius:0;
 }
 
-.alert-alert {
-background-color: #f2dede;
-border-color: #eed3d7;
-color: #b94a48;
-text-align: left;
+.navbar-custom .navbar-nav > li > a {
+    color:red;
 }
-
-.alert-success {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
 }
-
-.alert-notice {
-background-color: #dff0d8;
-border-color: #d6e9c6;
-color: #468847;
-text-align: left;
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
 }

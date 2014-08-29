@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def contact_us
+  def contact
   end
 
   

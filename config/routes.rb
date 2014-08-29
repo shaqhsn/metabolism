@@ -5,9 +5,10 @@ Rails.application.routes.draw do
     root  'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/contact',     to: 'static_pages#contact',             via: 'get'
+
   match '/team', to: 'static_pages#team', via: 'get'
   match '/scope', to: 'static_pages#scope', via: 'get'
-  match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
